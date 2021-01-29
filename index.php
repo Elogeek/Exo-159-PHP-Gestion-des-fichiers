@@ -23,10 +23,10 @@ fclose($file);
 
 //exemple 2
 if(file_exists('lire.txt')) {
-$contents = file ('lire.txt');
-foreach($file as $line) {
-    echo "<span>$line</span>";
-}
+    $contents = file ('lire.txt');
+    foreach($file as $line) {
+        echo "<span>$line</span>";
+    }
 }
 
 
@@ -39,7 +39,6 @@ $file = fopen('lire.txt', 'rb');
 while ($char = fgetc($file)){
     if($char !== " " && $char !== "." && $char !== "," && $char !== "?" && $char !== "!"){
         echo $char;
-
     }
 }
 fclose($file);
